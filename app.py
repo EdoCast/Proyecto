@@ -3,7 +3,7 @@ st.title("Seleccionador de alimentos")
 st.write("Sólo necesitas seleccionar los ingredientes que no quieres consumir en tu platillo favorito")
 st.image("https://www.milenio.com/uploads/media/2021/11/16/comida-mexicana.jpg")
 st.sidebar.title("Te mostraremos los platillos que no tengan tu ingrediente indeseado")
-st.write("Bebidas")
+st.title("Bebidas")
 st.write("Agua de horchata")
 with st.expander("Ingredientes"):
   st.write("Arroz, canela, agua, azucar, vainilla, leche")
@@ -19,7 +19,7 @@ ingredientes= st.multiselect('¿Qué ingrediente deseas descartar?',
      ['agua', 'azucar', 'guayaba'], 
                  ['azucar'])
 st.write("tu bebida sin:",ingredientes)
-st.write("Platillos")
+st.title("Platillos")
 st.write("Enchiladas verdes")
 with st.expander("Ingredientes"):
   st.write("tortillas, salsa verde, cebolla, queso, lechuga, crema")
@@ -51,7 +51,7 @@ with st.expander("Ingredientes"):
 st.multiselect("¿Qué ingrediente deseas descartar?",
      ["queso", "cubierta de huevo", "arroz", "frijoles"],
                     ["queso"])
-st.write("Entradas") 
+st.title("Entradas") 
 st.write("Guacamole con totopos")
 with st.expander("Especificaciones"):
   st.write("Totopos sin ajo", "Totopos con ajo")
